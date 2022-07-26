@@ -139,6 +139,38 @@ const sortbyName = charecters.sort(function (a, b) {
 // //Is there any charecter taller than 100?
 // console.log(charecters.some((charecter) => charecter.hieght > 100));
 
+//Object Practice questions
+
+//Write a program for rectangle square area
+
+let square = {
+  side: 10,
+  get area() {
+    return this.side ** 2;
+  },
+};
+
+square.side = 100;
+// console.log(square.area);
+
+// const stringConcat = ["Suyog", "Vijay", "Muley"];
+
+// console.log(stringConcat.join(" "));
+
+function stringConcat(seperator, ...strings) {
+  let returnVal = " ";
+  strings.forEach((string, i) => {
+    if (i == strings.length - 1) {
+      returnVal += string;
+    } else {
+      returnVal += string + seperator;
+    }
+  });
+
+  return returnVal;
+}
+
+console.log(stringConcat("+", "Suyog", "Muley"));
 
 
-//Object 
+
