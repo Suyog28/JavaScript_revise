@@ -171,6 +171,3 @@ function stringConcat(seperator, ...strings) {
 }
 
 console.log(stringConcat("+", "Suyog", "Muley"));
-
-
-
